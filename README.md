@@ -11,9 +11,5 @@ sh build.sh
 Deploy docker image to GitHub Container Regsitry
 
 ```shell
-docker login ghcr.io -u <user> 
-```
-
-```shell
 sh deploy.sh
 ```
