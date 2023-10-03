@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 
 . ./.env
-docker push ${IMG_TAG}
+docker login
+if [ $? -eq 0 ]; then
+  docker push ${IMG_TAG}
+fi
